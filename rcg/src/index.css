@@ -1,7 +1,24 @@
 * {
     margin: 0;
     padding: 0;
-    background: darkblue;
-    color: white;
+   
+   background: black;
     font-size: 1.3rem;
+    box-sizing: border-box;
+  
+   
+}
+
+.color-container {
+   
+}
+
+.color {
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+    color: orange;
+    display: grid;
+    gap: 1px;
+    grid: repeat(4, 1fr);
 }

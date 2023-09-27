@@ -6,7 +6,7 @@ export default class MyApp extends Component {
     constructor() {
         super();
         this.state = {
-            colorNum : 1,
+            colorNum : 20,
             colors: []
         }
         for(let i=0; i < this.state.colorNum; i++) {
@@ -14,7 +14,7 @@ export default class MyApp extends Component {
         }
     }
 
-    // generateColor 
+    // generateColor
 
     generateColor() {
         return '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
@@ -35,7 +35,7 @@ export default class MyApp extends Component {
     return (
       <div className="color-container">
        {this.state.colors.map((color,index) =>
-        <Color key={`color-${index}`} index={index} 
+        <Color key={`color-${index}`} index={index}
             update={this.updateColor.bind(this)}
             hexCode = {color.hexCode}
         />
